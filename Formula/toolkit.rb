@@ -1,8 +1,8 @@
 class Toolkit < Formula
   desc "Shared engineering toolkit — principles, scripts, and Codex pre-push review for all projects"
   homepage "https://github.com/henrymodisett/toolkit"
-  url "https://github.com/henrymodisett/toolkit/archive/refs/tags/v0.4.0.tar.gz"
-  sha256 "335f7bd24d7bb0999c948d21fa026cc2126ddde33d09eb16b44c2c444b9eb416"
+  url "https://github.com/henrymodisett/toolkit/archive/refs/tags/v0.5.0.tar.gz"
+  sha256 "0623b691366bb3b3d1500dcbd70af38b05d05597e862b34df7a53806150acad2"
   license "MIT"
 
   depends_on "gh"
@@ -12,6 +12,10 @@ class Toolkit < Formula
     # Install everything under libexec, symlink the CLI into bin.
     libexec.install Dir["*"]
     bin.install_symlink libexec/"bin/toolkit"
+
+    # Shell completions.
+    zsh_completion.install libexec/"completions/toolkit.zsh" => "_toolkit"
+    bash_completion.install libexec/"completions/toolkit.bash" => "toolkit"
   end
 
   test do
