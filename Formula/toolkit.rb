@@ -1,8 +1,8 @@
 class Toolkit < Formula
   desc "Shared engineering toolkit — principles, scripts, and Codex pre-push review for all projects"
   homepage "https://github.com/henrymodisett/toolkit"
-  url "https://github.com/henrymodisett/toolkit/archive/refs/tags/v0.5.6.tar.gz"
-  sha256 "b6ea8ce1440249278560dfa471bfa3a21220281a2ee057a5ca9d6102bd0b841d"
+  url "https://github.com/henrymodisett/toolkit/archive/refs/tags/v0.5.7.tar.gz"
+  sha256 "88282555bc4488d22ff8dcb6326432dd362fba8bae999d171c5902c2cced4175"
   license "MIT"
 
   depends_on "gh"
