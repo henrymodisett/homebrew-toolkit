@@ -1,8 +1,8 @@
 class Touchstone < Formula
   desc "Shared engineering starter kit — principles, scripts, and Codex pre-push review for all projects"
   homepage "https://github.com/autumngarage/touchstone"
-  url "https://github.com/autumngarage/touchstone/archive/refs/tags/v1.0.0.tar.gz"
-  sha256 "880a79e288175db6f1928f74b117b9c57df0cfd68e9fc43e4a8e35e177e314ad"
+  url "https://github.com/autumngarage/touchstone/archive/refs/tags/v1.0.1.tar.gz"
+  sha256 "80052ae55d8e48f6656f99ece0352b1ea6f4e5e0d8cdac24e3b5abd7db3444d4"
   license "MIT"
 
   depends_on "gh"
